@@ -47,7 +47,7 @@ El procesamiento de la señal del MPU6050 se estructura en cuatro etapas crític
 ### Validación Experimental de Estados del Cubli en el Tiempo
 Esta sección presenta el comportamiento dinámico y la evolución temporal de los estados del sistema durante la prueba de estabilización física. Las gráficas permiten contrastar la respuesta del controlador ante perturbaciones, evaluando la convergencia de los ángulos y la efectividad de la corrección inercial en el dominio del tiempo.
 
-![Validación Experimental de Estados](Graficas/Captura%20de%20pantalla%202026-11-04%20222418.png)
+![Validación Experimental de Estados](Graficas/prop_exp_grafica.png)
 
 ---
 
@@ -68,7 +68,7 @@ El desarrollo computacional incluye la implementación, simulación y validació
 ![Gráfica Método 1](Graficas/Grafica_1.png)
 
 ### Método 2: Caracterización de Actuadores y Saturación de Voltaje
-* **Enfoque Teórico:** Los motores en la realidad física presentan nonlinealidades considerables, tales como zonas muertas de fricción estática, retrasos de respuesta y límites estrictos de alimentación impuestos por la batería LiPo.
+* **Enfoque Teórico:** Los motores en la realidad física presentan no linealidades considerables, tales como zonas muertas de fricción estática, retrasos de respuesta y límites estrictos de alimentación impuestos por la batería LiPo.
 * **Implementación y Aporte:** Se implementa un modelo matemático de saturación y funciones de transferencia no lineales (como aproximaciones mediante tangente hiperbólica y límites de tensión a $12\,\text{V}$). Esto obliga al entorno de simulación a comportarse bajo restricciones físicas reales, evitando que los comandos de control calculados teóricamente saturen o quemen los componentes al pasarlos al hardware físico del ESP32.
 
 ![Gráfica Método 2](Graficas/grafica_2.png)
