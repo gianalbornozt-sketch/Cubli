@@ -65,7 +65,7 @@ El desarrollo computacional incluye la implementación, simulación y validació
 * **Enfoque Teórico:** Modela el sistema físico linealizado en un formato de espacio de estados ($\dot{x} = Ax + Bu$). Para estabilizar este sistema intrínsecamente inestable, se diseña un Regulador Lineal Cuadrático (LQR), el cual resuelve numéricamente la Ecuación Algebraica de Riccati para encontrar la matriz óptima de ganancias de control $K$.
 * **Implementación y Aporte:** Permite sintonizar de manera matemática y estructurada el compromiso entre la velocidad de respuesta del cubo y la energía consumida por los motores. En las simulaciones de MATLAB, esto asegura que los polos del sistema en lazo cerrado se ubiquen estrictamente en el semiplano izquierdo, garantizando la estabilidad asintótica del Cubli.
 
-![Gráfica Método 1](graficas/Grafica_1.png)
+![Gráfica Método 1](graficas/grafica_1.png)
 
 ### Método 2: Caracterización de Actuadores y Saturación de Voltaje
 * **Enfoque Teórico:** Los motores en la realidad física presentan no linealidades considerables, tales como zonas muertas de fricción estática, retrasos de respuesta y límites estrictos de alimentación impuestos por la batería LiPo.
