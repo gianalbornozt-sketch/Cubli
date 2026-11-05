@@ -13,7 +13,23 @@ Proyecto desarrollado para el curso de Métodos Numéricos de la Facultad de Ing
 
 ---
 
-## 1. Prototipo Experimental
+## 1. Materiales y Componentes Utilizados
+
+Para la construcción e implementación del sistema físico se emplearon los siguientes componentes electrónicos, mecánicos y estructurales:
+
+![Materiales del Proyecto](materiales.png)
+
+* **Microcontrolador:** ESP32 DevKit V1 (cerebro de procesamiento y control).
+* **Sensor Inercial:** Módulo GY-521 con sensor IMU MPU6050 (acelerómetro y giroscopio de 6 ejes).
+* **Actuadores:** Motores *Brushless* de alta velocidad de respuesta.
+* **Mecánica:** Volantes de inercia de metal pesado acoplados a los ejes.
+* **Alimentación y Energía:** Batería LiPo de 500 mAh (3.7V).
+* **Componentes Pasivos y Auxiliares:** Buzzer de alerta, resistencias ($10\,\text{k}\Omega$, $33\,\text{k}\Omega$, $6.8\,\text{k}\Omega$), condensador electrolítico ($35\,\text{V}, 100\,\mu\text{F}$) y condensador cerámico ($35\,\text{V}, 100\,\text{nF}$).
+* **Estructura y Acabados:** Estructura cúbica de soporte y diversos pegamentos industriales.
+
+---
+
+## 2. Prototipo Experimental
 
 ### Descripción General
 El sistema se implementa para resolver un problema clásico de control automático donde el sistema posee más grados de libertad que actuadores independientes. El cubo se apoya sobre uno de sus vértices, lo que lo vuelve intrínsecamente inestable.
@@ -23,14 +39,6 @@ El sistema se implementa para resolver un problema clásico de control automáti
 
 ### Vista del Prototipo
 ![Prototipo Experimental Cubli](prototitpo_exp.png)
-
-### Lista de Componentes y Hardware
-* **Microcontrolador:** ESP32 DevKit V1 (cerebro del procesamiento y control).
-* **Sensor Inercial:** Módulo GY-521 con sensor IMU MPU6050 (acelerómetro y giroscopio de 6 ejes).
-* **Actuadores:** Motores *Brushless* / Nidec de alta velocidad de respuesta.
-* **Mecánica:** Volantes de inercia de metal pesado acoplados a los ejes de los motores.
-* **Alimentación y Energía:** Batería LiPo de 500 mAh (3.7V), condensadores y reguladores de voltaje.
-* **Componentes Pasivos y Auxiliares:** Resistencias ($10\,\text{k}\Omega$, $33\,\text{k}\Omega$, $6.8\,\text{k}\Omega$) y Buzzer de alerta.
 
 ### Principio de Funcionamiento Físico
 1. **Detección:** El sensor MPU6050 lee constantemente la inclinación y velocidad angular del cubo.
@@ -51,13 +59,13 @@ Esta sección presenta el comportamiento dinámico y la evolución temporal de l
 
 ---
 
-## Diagrama del Circuito Electrónico
+## 3. Diagrama del Circuito Electrónico
 
 ![Diagrama Electrónico del Cubli](Diagrama_Cubli.png)
 
 ---
 
-## 2. Métodos Utilizados (Modelado y Simulación)
+## 4. Métodos Utilizados (Modelado y Simulación)
 
 El desarrollo computacional incluye la implementación, simulación y validación de 6 métodos fundamentales para el control y la estimación matemática del sistema:
 
