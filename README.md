@@ -44,6 +44,11 @@ El procesamiento de la señal del MPU6050 se estructura en cuatro etapas crític
 * **Corrección de Deriva (*Drift*):** Compensación del error acumulativo que sufre el giroscopio al integrar numéricamente la velocidad angular a lo largo del tiempo.
 * **Fusión Sensorial:** Combinación inteligente de datos (mediante filtros complementarios y estimadores) para estabilizar la lectura de orientación y mantener el error por debajo de $0.35^\circ$.
 
+### Validación Experimental de Estados del Cubli en el Tiempo
+Esta sección presenta el comportamiento dinámico y la evolución temporal de los estados del sistema durante la prueba de estabilización física. Las gráficas permiten contrastar la respuesta del controlador ante perturbaciones, evaluando la convergencia de los ángulos y la efectividad de la corrección inercial en el dominio del tiempo.
+
+![Validación Experimental de Estados](prop_exp_grafica.png)
+
 ---
 
 ## Diagrama del Circuito Electrónico
