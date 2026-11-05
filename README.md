@@ -2,7 +2,7 @@
 
 Proyecto desarrollado para el curso de Métodos Numéricos de la Facultad de Ingeniería Electrónica y Electrónica (FIEE) de la Universidad Nacional Mayor de San Marcos (UNMSM).
 
-## 👥 Integrantes
+## Integrantes
 * **Espinoza Quispe, Anthony**
 * **Albornoz Tamayo, Gian Carlos**
 * **Palomino Ccopa, Khevyn Jahir**
@@ -13,7 +13,7 @@ Proyecto desarrollado para el curso de Métodos Numéricos de la Facultad de Ing
 
 ---
 
-## 🔬 1. Prototipo Experimental
+## 1. Prototipo Experimental
 
 ### Descripción General
 El sistema se implementa para resolver un problema clásico de control automático donde el sistema posee más grados de libertad que actuadores independientes. El cubo se apoya sobre uno de sus vértices, lo que lo vuelve intrínsecamente inestable.
@@ -46,13 +46,13 @@ El procesamiento de la señal del MPU6050 se estructura en cuatro etapas crític
 
 ---
 
-## 🖼️ Diagrama del Circuito Electrónico
+## Diagrama del Circuito Electrónico
 
 ![Diagrama Electrónico del Cubli](Diagrama_Cubli.png)
 
 ---
 
-## ⚙️ 2. Métodos Utilizados (Modelado y Simulación)
+## 2. Métodos Utilizados (Modelado y Simulación)
 
 El desarrollo computacional incluye la implementación, simulación y validación de 6 métodos fundamentales para el control y la estimación matemática del sistema:
 
@@ -78,9 +78,9 @@ El desarrollo computacional incluye la implementación, simulación y validació
 
 ### Método 6: Estimación de Orientación Tridimensional mediante Cuaterniones
 * **Enfoque Teórico:** El uso de ángulos de Euler tradicionales (Roll, Pitch, Yaw) presenta limitaciones matemáticas graves como el fenómeno de bloqueo de cardán (*gimbal lock*). Para solucionarlo, se implementa una representación basada en cuaterniones de 4 parámetros ($q_w, q_x, q_y, q_z$).
-* **Implementación y Aporte:** Permite un seguimiento continuo y sin singularidades de la orientación espacial del Cubli. Mediante la corrección vectorial cruzada con los datos del acelerómetro, el algoritmo compensa de manera robusta la deriva del giroscopio, logrando una estimación de actitud confiable para el control de estabilidad.
+* **Implementación y Aporte:** Permite un seguimiento continuo y sin singularidades de la orientación espacial del Cubli. Mediante la corrección vectorial cruzada con los datos del acelerómetro, el algoritmo compensa de manera robusta la deriva del giroscopo, logrando una estimación de actitud confiable para el control de estabilidad.
 
 ---
 
-## 📁 Documentación
+## Documentación
 El informe, la monografía técnica y el desarrollo detallado del proyecto se encuentran adjuntos en este repositorio en el archivo **`CUBLI.pdf`**.
